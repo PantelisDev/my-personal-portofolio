@@ -12,7 +12,7 @@ import { FaInstagram } from "react-icons/fa";
         <div className='min-h-[100px] flex flex-col justify-center gap-6 text-center text-xl text-gray-300
         font-mono mb-10'>
             <div className='flex gap-10 p-4 justify-center text-white'>
-                <a href='' className='border p-2 text-2xl rounded hover:-translate-y-2 
+                <a href='https://www.linkedin.com/in/pantelis-dev-70b7b030b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' className='border p-2 text-2xl rounded hover:-translate-y-2 
                 transition-all bg-blue-500 text-white' 
                 target='_blank'>
                 <FaLinkedin />
