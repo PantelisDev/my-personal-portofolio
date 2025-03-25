@@ -102,13 +102,12 @@ useEffect(() => {
             </a>
 
             <a
-              className="p-2 px-4 text-sm border-[1.5px] block w-fit font-mono capitalize rounded border-accent text-accent hover:text-[#4285F4] focus:outline-none focus:bg-accent-light duration-150 cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="/resume.pdf"
-            >
-              resume
-            </a>
+            className="p-2 px-4 text-sm border-[1.5px] block w-fit font-mono capitalize rounded border-accent text-accent hover:text-[#4285F4] focus:outline-none focus:bg-accent-light duration-150 cursor-pointer"
+            download="resume.pdf"  
+            href="#"
+          >
+            resume
+          </a>
 
             <button
               onClick={toggleLightMode}
