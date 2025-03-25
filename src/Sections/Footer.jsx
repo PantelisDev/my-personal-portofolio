@@ -18,7 +18,7 @@ import { FaInstagram } from "react-icons/fa";
                 <FaLinkedin />
                 </a>
 
-                <a href='' className='border p-2 text-2xl rounded hover:-translate-y-2 
+                <a href='https://github.com/PantelisDev' className='border p-2 text-2xl rounded hover:-translate-y-2 
                 transition-all bg-gray-500 text-white' 
                 target='_blank'>
                 <FaGithub />
