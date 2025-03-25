@@ -11,14 +11,14 @@ function Projects() {
       image: carrent,
       name: "Car Rent Website",
       brief: "Scalable car-rent website service",
-      link: "https://example.com/car-rent",
+      link: "https://pantelisan2888.github.io/car-rent-website/",
       technologies: ["HTML", "CSS", "Javacript"],
     },
     {
       image: cinema,
       name: "Cinema",
       brief: "Scalable cinema website service",
-      link: "https://example.com/cinema",
+      link: "https://pantelisan.github.io/Academy-Cinemas-/",
       technologies: ["HTML", "Bootstrap"],
     },
     {
