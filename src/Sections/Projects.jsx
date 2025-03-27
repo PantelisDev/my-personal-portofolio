@@ -12,7 +12,7 @@ function Projects() {
       name: "Car Rent Website",
       brief: "Scalable car-rent website service",
       link: "https://pantelisan2888.github.io/car-rent-website/",
-      technologies: ["HTML", "CSS", "Javacript"],
+      technologies: ["HTML", "CSS", "Javascript"],
     },
     {
       image: cinema,
@@ -25,14 +25,14 @@ function Projects() {
       image: calculator,
       name: "Calculator App",
       brief: "A simple and functional calculator app",
-      link: "https://example.com/calculator",
+      link: "#", 
       technologies: ["HTML", "CSS", "JavaScript"],
     },
     {
       image: todoapp,
       name: "To-Do App",
       brief: "A task management app to organize your work",
-      link: "https://example.com/todo-app",
+      link: "#", 
       technologies: ["HTML", "CSS", "JavaScript"],
     },
   ]);
@@ -44,45 +44,44 @@ function Projects() {
           Featured Projects
         </h2>
         <RevealOnScroll>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 '>
-          {projects.map((project, index) => (
-            <a
-              key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className='relative p-6 rounded-xl flex flex-col items-center text-center border-2 bg-[#1E1E1E] border-white/10 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-all group'
-            >
-           
-              <img
-                src={project.image}
-                alt={project.name}
-                className='w-full h-48 object-contain rounded-lg mb-4'
-              />
-
-             
-              <h3 className='text-2xl font-bold text-gray-100 mb-2'>{project.name}</h3>
-              <h3 className='text-gray-300 mb-4'>{project.brief}</h3>
-
-             
-              <div className='flex flex-wrap justify-center gap-2'>
-                {project.technologies.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className='bg-blue-500/10 text-blue-300 py-1 px-3 rounded-full text-sm'
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-             
-              <div className='absolute inset-0 flex items-start justify-center bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl pt-25'>
-                <h3 className='text-white text-lg font-semibold'>Click here to view project</h3>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+            {projects.map((project, index) => (
+              <a
+                key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='relative p-6 rounded-xl flex flex-col items-center text-center border-2 bg-[#1E1E1E] border-white/10 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:-translate-y-1 transition-all group'
+                onClick={(e) => {
+                  if (project.link === "#") {
+                    e.preventDefault();
+                    alert("Project link coming soon!"); 
+                  }
+                }}
+              >
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className='w-full h-48 object-contain rounded-lg mb-4'
+                />
+                <h3 className='text-2xl font-bold text-gray-100 mb-2'>{project.name}</h3>
+                <h3 className='text-gray-300 mb-4'>{project.brief}</h3>
+                <div className='flex flex-wrap justify-center gap-2'>
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className='bg-blue-500/10 text-blue-300 py-1 px-3 rounded-full text-sm'
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-            </a>
-          ))}
-        </div>
+                <div className='absolute inset-0 flex items-start justify-center bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl pt-25'>
+                  <h3 className='text-white text-lg font-semibold'>Click here to view project</h3>
+                </div>
+              </a>
+            ))}
+          </div>
         </RevealOnScroll>
       </div>
     </section>
