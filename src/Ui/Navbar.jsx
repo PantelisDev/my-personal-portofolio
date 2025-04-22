@@ -101,13 +101,8 @@ useEffect(() => {
               <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-gradient-to-r from-[#4285F4] via-[#DB4437] to-[#F4B400] group-hover:w-full group-focus:w-full transition-all duration-300 ease-in-out"></span>
             </a>
 
-            <a
-            className="p-2 px-4 text-sm border-[1.5px] block w-fit font-mono capitalize rounded border-accent text-accent hover:text-[#4285F4] focus:outline-none focus:bg-accent-light duration-150 cursor-pointer"
-            download="resume.pdf"  
-            href="#"
-          >
-            resume
-          </a>
+
+          
 
             <button
               onClick={toggleLightMode}
